@@ -1,23 +1,5 @@
-define([
-        'base/js/namespace',
-        'base/js/promises'
-     ], function(Jupyter, promises) {
-         promises.app_initialized.then(function(appname) {
-             if (appname === 'NotebookApp') {
-				 if (document.getElementById('maintoolbar').style.display !="none"){
-					 document.getElementById("maintoolbar-container").removeChild(document.getElementById("maintoolbar-container").lastChild)
-						}
-						IPython.keyboard_manager.command_shortcuts.remove_shortcut('x');
-                        IPython.keyboard_manager.command_shortcuts.remove_shortcut('d,d');
-                        IPython.keyboard_manager.command_shortcuts.remove_shortcut('enter');
-                        IPython.keyboard_manager.command_shortcuts.remove_shortcut('Shift-m');
-                        IPython.keyboard_manager.command_shortcuts.remove_shortcut('Shift-v');
-					}
-         });
-     });
-	 
 var innerFlexSpacer = document.getElementsByClassName('flex-spacer');
-var urlPathBase = document.body.getAttribute("data-base-url")
+var urlPathBase = document.body.getAttribute("data-base-url");
 
 
 if (innerFlexSpacer.length != 0) {
@@ -70,7 +52,3 @@ aimg4.appendChild(img4);
 innerFlexSpacer[0].appendChild(aimg4);
 }
 
-jQuery(function(j$){//This will execute on page load
-
-  $('.cell').unbind('dblclick'); // unbind doubleclick event for text-cell in Jupyter notebook
-});
