@@ -10,4 +10,4 @@ Pour accéder au cours, cliquez simplement sur ce lien : https://mybinder.org/v2
 
 Pour poser vos questions, utilisez la section "Issues" de Github
 
-Vous pouvez proposer vos propres modifications du cours par l'intermédiaire d'un "pull request"
+Vous pouvez proposer vos propres modifications du cours par l'intermédiaire d'un "pull request"  
